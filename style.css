@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background: linear-gradient(135deg, #4158D0 , #C850C0 , #FFCC70 ); */
+
+}
+body{
+    background: linear-gradient(135deg, #4158D0 , #C850C0 , #FFCC70 );
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    /* background-color: #4158D0; */
+    
+} 
+.container{
+    background: linear-gradient(135deg, #4158D0 , #C850C0 , #FFCC70 );
+    box-shadow: 3px 4px 12px 8px rgba(0, 0, 0, 0.2);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   height: 70vh;
+   width: 50vh;
+   text-align: center;
+   padding: 25px;
+   border-radius: 30px;
+   margin: 50px;
+   margin-bottom:168px;
+}
+
+.container h2{
+color: #4B0082;
+font-size: 6vh;
+margin-bottom: 10px;
+}
+.row{
+display: flex;
+justify-content: center;
+gap: 2vh;
+
+}
+.row .box{
+    outline: none;
+    /* border: none; */
+    border: 1px solid #f1aa25;
+    /* border: 1px solid black; */
+    width: 3.5vw;
+    height: 6vh;
+    margin-bottom:2vh ;
+    font-size: 3vh;
+    padding: 2px;
+    background: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    background: rgba(195, 76, 255, 0.1);
+    cursor: pointer;
+    border-radius: 20px;
+}
+.row button:hover{
+    border:black ;
+    background-color: rgba(180, 65, 238, 0.1);
+}
+.row .boxsp{
+    width: 17vh;
+}
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.input input {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphic effect */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Hover effect */
+.input input:hover {
+    border-color: #FFCC70;
+}
+
+/* Focus effect */
+.input input:focus {
+    border-color: #C850C0;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Placeholder styling */
+.input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+
+/* Disable arrows in number inputs for browsers that still show them */
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
